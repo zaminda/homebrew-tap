@@ -5,21 +5,21 @@
 class Pig < Formula
   desc "Simple TUI list picker"
   homepage "https://github.com/zaminda/pig"
-  version "0.1.2"
+  version "0.1.3"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/zaminda/pig/releases/download/v0.1.2/pig_darwin_amd64.tar.gz"
-      sha256 "c9fa94f4c8b8b5a2155cfdc37834599866c1f10932255eccfac9943d8b9cf5f7"
+      url "https://github.com/zaminda/pig/releases/download/v0.1.3/pig_darwin_amd64.tar.gz"
+      sha256 "404bacfd8ee2cfae577d8cd50419cc2db12f7228382ab66d86c8fd8ae00b7b28"
 
       define_method(:install) do
         bin.install "pig"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/zaminda/pig/releases/download/v0.1.2/pig_darwin_arm64.tar.gz"
-      sha256 "e4e47758b87247424d1c91d426c653b19ab2f9f963ee94bff966efd51d00aa58"
+      url "https://github.com/zaminda/pig/releases/download/v0.1.3/pig_darwin_arm64.tar.gz"
+      sha256 "e916bde6760230f371e47ae2996edef297634914aaec9c64aade9c18fa23c3ca"
 
       define_method(:install) do
         bin.install "pig"
@@ -29,15 +29,15 @@ class Pig < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/zaminda/pig/releases/download/v0.1.2/pig_linux_amd64.tar.gz"
-      sha256 "3cf18312076a86538609f12c9fda816de5a8234476910f52562196d6a04bd7bd"
+      url "https://github.com/zaminda/pig/releases/download/v0.1.3/pig_linux_amd64.tar.gz"
+      sha256 "7e7defdca245b58925f580a24f9508e635be7687a45b202c76aead0456815a18"
       define_method(:install) do
         bin.install "pig"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/zaminda/pig/releases/download/v0.1.2/pig_linux_arm64.tar.gz"
-      sha256 "341a1cfe2ed1d65830cc47a7aee142ef74a1b269eddae3219ab67240c14372dc"
+      url "https://github.com/zaminda/pig/releases/download/v0.1.3/pig_linux_arm64.tar.gz"
+      sha256 "150c2bafc68770292cd0c6e2e725a465423bf7eb9f755a05ce07a153f3a89b58"
       define_method(:install) do
         bin.install "pig"
       end
